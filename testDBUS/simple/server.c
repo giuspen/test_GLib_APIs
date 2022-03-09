@@ -1,6 +1,8 @@
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <glib.h>
+
 #include "mydbus.h"
 
 static void on_name_acquired(GDBusConnection *connection, const gchar *name, gpointer user_data);
@@ -34,10 +36,9 @@ int main()
     g_main_loop_run(loop);
 }
 
-static void
-on_name_acquired(GDBusConnection *connection,
-                 const gchar *name,
-                 gpointer user_data)
+static void on_name_acquired(GDBusConnection *connection,
+                             const gchar *name,
+                             gpointer user_data)
 {
     MyDBusCalculator *interface;
     GError *error;
@@ -55,27 +56,26 @@ on_name_acquired(GDBusConnection *connection,
     g_dbus_interface_skeleton_export(G_DBUS_INTERFACE_SKELETON(alarm_interface), connection, "/", &error);
 }
 
-static gboolean
-on_handle_add(MyDBusCalculator *interface,
-              GDBusMethodInvocation *invocation,
-              const gint num1, const gint num2,
-              gpointer user_data)
+static gboolean on_handle_add(MyDBusCalculator *interface,
+                              GDBusMethodInvocation *invocation,
+                              const gint num1,
+                              const gint num2,
+                              gpointer user_data)
 {
     gint ans = num1 + num2;
     g_print("Added %d and %d.\n", num1, num2);
-    g_print("Press enter to send messaage to client .. ");
+    g_print("Press enter to send message to client ...");
     getchar();
     my_dbus_calculator_complete_add(interface, invocation, ans);
-    g_print("       Message sent!\n");
+    g_print("...Message sent!\n");
 
-    return FALSE;
+    return TRUE;
 }
 
-static gboolean
-on_handle_sub(MyDBusCalculator *interface,
-              GDBusMethodInvocation *invocation,
-              const gint num1, const gint num2,
-              gpointer user_data)
+static gboolean on_handle_sub(MyDBusCalculator *interface,
+                              GDBusMethodInvocation *invocation,
+                              const gint num1, const gint num2,
+                              gpointer user_data)
 {
     gint ans = num1 - num2;
     my_dbus_calculator_complete_sub(interface, invocation, ans);
@@ -85,9 +85,9 @@ on_handle_sub(MyDBusCalculator *interface,
 }
 
 static gboolean on_handle_configure_alarm(MyDBusAlarm *interface,
-                                    GDBusMethodInvocation *invocation,
-                                    const guint seconds,
-                                    gpointer user_data)
+                                          GDBusMethodInvocation *invocation,
+                                          const guint seconds,
+                                          gpointer user_data)
 {
     if (my_dbus_alarm_get_activated(interface))
     {
@@ -105,6 +105,7 @@ static gboolean on_handle_configure_alarm(MyDBusAlarm *interface,
 static gboolean emit_alarm_cb(gpointer interface)
 {
     my_dbus_alarm_emit_beep(MY_DBUS_ALARM(interface));
-    my_dbus_alarm_set_activated(MY_DBUS_ALARM(interface),FALSE);
+    my_dbus_alarm_set_activated(MY_DBUS_ALARM(interface), FALSE);
+
     return FALSE;
 }

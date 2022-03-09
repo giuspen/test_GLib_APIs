@@ -1,11 +1,15 @@
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <glib.h>
+
 #include "mydbus.h"
-static void
-callback_add_async(GObject *proxy,
-                   GAsyncResult *res,
-                   gpointer user_data);
+
+
+static void callback_add_async(GObject *proxy,
+                               GAsyncResult *res,
+                               gpointer user_data);
+
 int main(int argc, char **argv)
 {
     if (argc < 3)
@@ -37,10 +41,9 @@ int main(int argc, char **argv)
     return 0;
 }
 
-static void
-callback_add_async(GObject *proxy,
-                   GAsyncResult *res,
-                   gpointer user_data)
+static void callback_add_async(GObject *proxy,
+                               GAsyncResult *res,
+                               gpointer user_data)
 {
     g_print("callback_add_async called!\n");
     gint retval;
