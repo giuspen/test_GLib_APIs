@@ -1,5 +1,5 @@
-add
-pingme
+client_add
+client_pingme
+client_sub
 server
-sub
 *.o
