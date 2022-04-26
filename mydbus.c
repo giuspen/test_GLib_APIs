@@ -152,19 +152,19 @@ _g_value_equal (const GValue *a, const GValue *b)
 }
 
 /* ------------------------------------------------------------------------
- * Code for interface com.Nilanjana.Calculator
+ * Code for interface com.TestXmlInterface.Calculator
  * ------------------------------------------------------------------------
  */
 
 /**
  * SECTION:MyDBusCalculator
  * @title: MyDBusCalculator
- * @short_description: Generated C code for the com.Nilanjana.Calculator D-Bus interface
+ * @short_description: Generated C code for the com.TestXmlInterface.Calculator D-Bus interface
  *
- * This section contains code for working with the <link linkend="gdbus-interface-com-Nilanjana-Calculator.top_of_page">com.Nilanjana.Calculator</link> D-Bus interface in C.
+ * This section contains code for working with the <link linkend="gdbus-interface-com-Nilanjana-Calculator.top_of_page">com.TestXmlInterface.Calculator</link> D-Bus interface in C.
  */
 
-/* ---- Introspection data for com.Nilanjana.Calculator ---- */
+/* ---- Introspection data for com.TestXmlInterface.Calculator ---- */
 
 static const _ExtendedGDBusArgInfo _my_dbus_calculator_method_info_add_IN_ARG_num1 =
 {
@@ -295,7 +295,7 @@ static const _ExtendedGDBusInterfaceInfo _my_dbus_calculator_interface_info =
 {
   {
     -1,
-    (gchar *) "com.Nilanjana.Calculator",
+    (gchar *) "com.TestXmlInterface.Calculator",
     (GDBusMethodInfo **) &_my_dbus_calculator_method_info_pointers,
     NULL,
     NULL,
@@ -308,7 +308,7 @@ static const _ExtendedGDBusInterfaceInfo _my_dbus_calculator_interface_info =
 /**
  * my_dbus_calculator_interface_info:
  *
- * Gets a machine-readable description of the <link linkend="gdbus-interface-com-Nilanjana-Calculator.top_of_page">com.Nilanjana.Calculator</link> D-Bus interface.
+ * Gets a machine-readable description of the <link linkend="gdbus-interface-com-Nilanjana-Calculator.top_of_page">com.TestXmlInterface.Calculator</link> D-Bus interface.
  *
  * Returns: (transfer none): A #GDBusInterfaceInfo. Do not free.
  */
@@ -339,7 +339,7 @@ my_dbus_calculator_override_properties (GObjectClass *klass, guint property_id_b
 /**
  * MyDBusCalculator:
  *
- * Abstract interface type for the D-Bus interface <link linkend="gdbus-interface-com-Nilanjana-Calculator.top_of_page">com.Nilanjana.Calculator</link>.
+ * Abstract interface type for the D-Bus interface <link linkend="gdbus-interface-com-Nilanjana-Calculator.top_of_page">com.TestXmlInterface.Calculator</link>.
  */
 
 /**
@@ -348,7 +348,7 @@ my_dbus_calculator_override_properties (GObjectClass *klass, guint property_id_b
  * @handle_add: Handler for the #MyDBusCalculator::handle-add signal.
  * @handle_sub: Handler for the #MyDBusCalculator::handle-sub signal.
  *
- * Virtual table for the D-Bus interface <link linkend="gdbus-interface-com-Nilanjana-Calculator.top_of_page">com.Nilanjana.Calculator</link>.
+ * Virtual table for the D-Bus interface <link linkend="gdbus-interface-com-Nilanjana-Calculator.top_of_page">com.TestXmlInterface.Calculator</link>.
  */
 
 typedef MyDBusCalculatorIface MyDBusCalculatorInterface;
@@ -843,7 +843,7 @@ my_dbus_calculator_proxy_iface_init (MyDBusCalculatorIface *iface)
  * @callback: A #GAsyncReadyCallback to call when the request is satisfied.
  * @user_data: User data to pass to @callback.
  *
- * Asynchronously creates a proxy for the D-Bus interface <link linkend="gdbus-interface-com-Nilanjana-Calculator.top_of_page">com.Nilanjana.Calculator</link>. See g_dbus_proxy_new() for more details.
+ * Asynchronously creates a proxy for the D-Bus interface <link linkend="gdbus-interface-com-Nilanjana-Calculator.top_of_page">com.TestXmlInterface.Calculator</link>. See g_dbus_proxy_new() for more details.
  *
  * When the operation is finished, @callback will be invoked in the thread-default main loop of the thread you are calling this method from (see g_main_context_push_thread_default()).
  * You can then call my_dbus_calculator_proxy_new_finish() to get the result of the operation.
@@ -860,7 +860,7 @@ my_dbus_calculator_proxy_new (
     GAsyncReadyCallback  callback,
     gpointer             user_data)
 {
-  g_async_initable_new_async (MY_DBUS_TYPE_CALCULATOR_PROXY, G_PRIORITY_DEFAULT, cancellable, callback, user_data, "g-flags", flags, "g-name", name, "g-connection", connection, "g-object-path", object_path, "g-interface-name", "com.Nilanjana.Calculator", NULL);
+  g_async_initable_new_async (MY_DBUS_TYPE_CALCULATOR_PROXY, G_PRIORITY_DEFAULT, cancellable, callback, user_data, "g-flags", flags, "g-name", name, "g-connection", connection, "g-object-path", object_path, "g-interface-name", "com.TestXmlInterface.Calculator", NULL);
 }
 
 /**
@@ -897,7 +897,7 @@ my_dbus_calculator_proxy_new_finish (
  * @cancellable: (nullable): A #GCancellable or %NULL.
  * @error: Return location for error or %NULL
  *
- * Synchronously creates a proxy for the D-Bus interface <link linkend="gdbus-interface-com-Nilanjana-Calculator.top_of_page">com.Nilanjana.Calculator</link>. See g_dbus_proxy_new_sync() for more details.
+ * Synchronously creates a proxy for the D-Bus interface <link linkend="gdbus-interface-com-Nilanjana-Calculator.top_of_page">com.TestXmlInterface.Calculator</link>. See g_dbus_proxy_new_sync() for more details.
  *
  * The calling thread is blocked until a reply is received.
  *
@@ -915,7 +915,7 @@ my_dbus_calculator_proxy_new_sync (
     GError             **error)
 {
   GInitable *ret;
-  ret = g_initable_new (MY_DBUS_TYPE_CALCULATOR_PROXY, cancellable, error, "g-flags", flags, "g-name", name, "g-connection", connection, "g-object-path", object_path, "g-interface-name", "com.Nilanjana.Calculator", NULL);
+  ret = g_initable_new (MY_DBUS_TYPE_CALCULATOR_PROXY, cancellable, error, "g-flags", flags, "g-name", name, "g-connection", connection, "g-object-path", object_path, "g-interface-name", "com.TestXmlInterface.Calculator", NULL);
   if (ret != NULL)
     return MY_DBUS_CALCULATOR (ret);
   else
@@ -950,7 +950,7 @@ my_dbus_calculator_proxy_new_for_bus (
     GAsyncReadyCallback  callback,
     gpointer             user_data)
 {
-  g_async_initable_new_async (MY_DBUS_TYPE_CALCULATOR_PROXY, G_PRIORITY_DEFAULT, cancellable, callback, user_data, "g-flags", flags, "g-name", name, "g-bus-type", bus_type, "g-object-path", object_path, "g-interface-name", "com.Nilanjana.Calculator", NULL);
+  g_async_initable_new_async (MY_DBUS_TYPE_CALCULATOR_PROXY, G_PRIORITY_DEFAULT, cancellable, callback, user_data, "g-flags", flags, "g-name", name, "g-bus-type", bus_type, "g-object-path", object_path, "g-interface-name", "com.TestXmlInterface.Calculator", NULL);
 }
 
 /**
@@ -1005,7 +1005,7 @@ my_dbus_calculator_proxy_new_for_bus_sync (
     GError             **error)
 {
   GInitable *ret;
-  ret = g_initable_new (MY_DBUS_TYPE_CALCULATOR_PROXY, cancellable, error, "g-flags", flags, "g-name", name, "g-bus-type", bus_type, "g-object-path", object_path, "g-interface-name", "com.Nilanjana.Calculator", NULL);
+  ret = g_initable_new (MY_DBUS_TYPE_CALCULATOR_PROXY, cancellable, error, "g-flags", flags, "g-name", name, "g-bus-type", bus_type, "g-object-path", object_path, "g-interface-name", "com.TestXmlInterface.Calculator", NULL);
   if (ret != NULL)
     return MY_DBUS_CALCULATOR (ret);
   else
@@ -1207,7 +1207,7 @@ my_dbus_calculator_skeleton_dbus_interface_get_properties (GDBusInterfaceSkeleto
       if (info->flags & G_DBUS_PROPERTY_INFO_FLAGS_READABLE)
         {
           GVariant *value;
-          value = _my_dbus_calculator_skeleton_handle_get_property (g_dbus_interface_skeleton_get_connection (G_DBUS_INTERFACE_SKELETON (skeleton)), NULL, g_dbus_interface_skeleton_get_object_path (G_DBUS_INTERFACE_SKELETON (skeleton)), "com.Nilanjana.Calculator", info->name, NULL, skeleton);
+          value = _my_dbus_calculator_skeleton_handle_get_property (g_dbus_interface_skeleton_get_connection (G_DBUS_INTERFACE_SKELETON (skeleton)), NULL, g_dbus_interface_skeleton_get_object_path (G_DBUS_INTERFACE_SKELETON (skeleton)), "com.TestXmlInterface.Calculator", info->name, NULL, skeleton);
           if (value != NULL)
             {
               g_variant_take_ref (value);
@@ -1289,7 +1289,7 @@ my_dbus_calculator_skeleton_iface_init (MyDBusCalculatorIface *iface)
 /**
  * my_dbus_calculator_skeleton_new:
  *
- * Creates a skeleton object for the D-Bus interface <link linkend="gdbus-interface-com-Nilanjana-Calculator.top_of_page">com.Nilanjana.Calculator</link>.
+ * Creates a skeleton object for the D-Bus interface <link linkend="gdbus-interface-com-Nilanjana-Calculator.top_of_page">com.TestXmlInterface.Calculator</link>.
  *
  * Returns: (transfer full) (type MyDBusCalculatorSkeleton): The skeleton object.
  */
@@ -1300,19 +1300,19 @@ my_dbus_calculator_skeleton_new (void)
 }
 
 /* ------------------------------------------------------------------------
- * Code for interface com.Nilanjana.Alarm
+ * Code for interface com.TestXmlInterface.Alarm
  * ------------------------------------------------------------------------
  */
 
 /**
  * SECTION:MyDBusAlarm
  * @title: MyDBusAlarm
- * @short_description: Generated C code for the com.Nilanjana.Alarm D-Bus interface
+ * @short_description: Generated C code for the com.TestXmlInterface.Alarm D-Bus interface
  *
- * This section contains code for working with the <link linkend="gdbus-interface-com-Nilanjana-Alarm.top_of_page">com.Nilanjana.Alarm</link> D-Bus interface in C.
+ * This section contains code for working with the <link linkend="gdbus-interface-com-Nilanjana-Alarm.top_of_page">com.TestXmlInterface.Alarm</link> D-Bus interface in C.
  */
 
-/* ---- Introspection data for com.Nilanjana.Alarm ---- */
+/* ---- Introspection data for com.TestXmlInterface.Alarm ---- */
 
 static const _ExtendedGDBusArgInfo _my_dbus_alarm_method_info_configure_alarm_IN_ARG_seconds =
 {
@@ -1391,7 +1391,7 @@ static const _ExtendedGDBusInterfaceInfo _my_dbus_alarm_interface_info =
 {
   {
     -1,
-    (gchar *) "com.Nilanjana.Alarm",
+    (gchar *) "com.TestXmlInterface.Alarm",
     (GDBusMethodInfo **) &_my_dbus_alarm_method_info_pointers,
     (GDBusSignalInfo **) &_my_dbus_alarm_signal_info_pointers,
     (GDBusPropertyInfo **) &_my_dbus_alarm_property_info_pointers,
@@ -1404,7 +1404,7 @@ static const _ExtendedGDBusInterfaceInfo _my_dbus_alarm_interface_info =
 /**
  * my_dbus_alarm_interface_info:
  *
- * Gets a machine-readable description of the <link linkend="gdbus-interface-com-Nilanjana-Alarm.top_of_page">com.Nilanjana.Alarm</link> D-Bus interface.
+ * Gets a machine-readable description of the <link linkend="gdbus-interface-com-Nilanjana-Alarm.top_of_page">com.TestXmlInterface.Alarm</link> D-Bus interface.
  *
  * Returns: (transfer none): A #GDBusInterfaceInfo. Do not free.
  */
@@ -1436,7 +1436,7 @@ my_dbus_alarm_override_properties (GObjectClass *klass, guint property_id_begin)
 /**
  * MyDBusAlarm:
  *
- * Abstract interface type for the D-Bus interface <link linkend="gdbus-interface-com-Nilanjana-Alarm.top_of_page">com.Nilanjana.Alarm</link>.
+ * Abstract interface type for the D-Bus interface <link linkend="gdbus-interface-com-Nilanjana-Alarm.top_of_page">com.TestXmlInterface.Alarm</link>.
  */
 
 /**
@@ -1446,7 +1446,7 @@ my_dbus_alarm_override_properties (GObjectClass *klass, guint property_id_begin)
  * @get_activated: Getter for the #MyDBusAlarm:activated property.
  * @beep: Handler for the #MyDBusAlarm::beep signal.
  *
- * Virtual table for the D-Bus interface <link linkend="gdbus-interface-com-Nilanjana-Alarm.top_of_page">com.Nilanjana.Alarm</link>.
+ * Virtual table for the D-Bus interface <link linkend="gdbus-interface-com-Nilanjana-Alarm.top_of_page">com.TestXmlInterface.Alarm</link>.
  */
 
 typedef MyDBusAlarmIface MyDBusAlarmInterface;
@@ -1746,7 +1746,7 @@ my_dbus_alarm_proxy_set_property_cb (GDBusProxy *proxy,
   _ret = g_dbus_proxy_call_finish (proxy, res, &error);
   if (!_ret)
     {
-      g_warning ("Error setting property '%s' on interface com.Nilanjana.Alarm: %s (%s, %d)",
+      g_warning ("Error setting property '%s' on interface com.TestXmlInterface.Alarm: %s (%s, %d)",
                  info->parent_struct.name, 
                  error->message, g_quark_to_string (error->domain), error->code);
       g_error_free (error);
@@ -1770,7 +1770,7 @@ my_dbus_alarm_proxy_set_property (GObject      *object,
   variant = g_dbus_gvalue_to_gvariant (value, G_VARIANT_TYPE (info->parent_struct.signature));
   g_dbus_proxy_call (G_DBUS_PROXY (object),
     "org.freedesktop.DBus.Properties.Set",
-    g_variant_new ("(ssv)", "com.Nilanjana.Alarm", info->parent_struct.name, variant),
+    g_variant_new ("(ssv)", "com.TestXmlInterface.Alarm", info->parent_struct.name, variant),
     G_DBUS_CALL_FLAGS_NONE,
     -1,
     NULL, (GAsyncReadyCallback) my_dbus_alarm_proxy_set_property_cb, (GDBusPropertyInfo *) &info->parent_struct);
@@ -1912,7 +1912,7 @@ my_dbus_alarm_proxy_iface_init (MyDBusAlarmIface *iface)
  * @callback: A #GAsyncReadyCallback to call when the request is satisfied.
  * @user_data: User data to pass to @callback.
  *
- * Asynchronously creates a proxy for the D-Bus interface <link linkend="gdbus-interface-com-Nilanjana-Alarm.top_of_page">com.Nilanjana.Alarm</link>. See g_dbus_proxy_new() for more details.
+ * Asynchronously creates a proxy for the D-Bus interface <link linkend="gdbus-interface-com-Nilanjana-Alarm.top_of_page">com.TestXmlInterface.Alarm</link>. See g_dbus_proxy_new() for more details.
  *
  * When the operation is finished, @callback will be invoked in the thread-default main loop of the thread you are calling this method from (see g_main_context_push_thread_default()).
  * You can then call my_dbus_alarm_proxy_new_finish() to get the result of the operation.
@@ -1929,7 +1929,7 @@ my_dbus_alarm_proxy_new (
     GAsyncReadyCallback  callback,
     gpointer             user_data)
 {
-  g_async_initable_new_async (MY_DBUS_TYPE_ALARM_PROXY, G_PRIORITY_DEFAULT, cancellable, callback, user_data, "g-flags", flags, "g-name", name, "g-connection", connection, "g-object-path", object_path, "g-interface-name", "com.Nilanjana.Alarm", NULL);
+  g_async_initable_new_async (MY_DBUS_TYPE_ALARM_PROXY, G_PRIORITY_DEFAULT, cancellable, callback, user_data, "g-flags", flags, "g-name", name, "g-connection", connection, "g-object-path", object_path, "g-interface-name", "com.TestXmlInterface.Alarm", NULL);
 }
 
 /**
@@ -1966,7 +1966,7 @@ my_dbus_alarm_proxy_new_finish (
  * @cancellable: (nullable): A #GCancellable or %NULL.
  * @error: Return location for error or %NULL
  *
- * Synchronously creates a proxy for the D-Bus interface <link linkend="gdbus-interface-com-Nilanjana-Alarm.top_of_page">com.Nilanjana.Alarm</link>. See g_dbus_proxy_new_sync() for more details.
+ * Synchronously creates a proxy for the D-Bus interface <link linkend="gdbus-interface-com-Nilanjana-Alarm.top_of_page">com.TestXmlInterface.Alarm</link>. See g_dbus_proxy_new_sync() for more details.
  *
  * The calling thread is blocked until a reply is received.
  *
@@ -1984,7 +1984,7 @@ my_dbus_alarm_proxy_new_sync (
     GError             **error)
 {
   GInitable *ret;
-  ret = g_initable_new (MY_DBUS_TYPE_ALARM_PROXY, cancellable, error, "g-flags", flags, "g-name", name, "g-connection", connection, "g-object-path", object_path, "g-interface-name", "com.Nilanjana.Alarm", NULL);
+  ret = g_initable_new (MY_DBUS_TYPE_ALARM_PROXY, cancellable, error, "g-flags", flags, "g-name", name, "g-connection", connection, "g-object-path", object_path, "g-interface-name", "com.TestXmlInterface.Alarm", NULL);
   if (ret != NULL)
     return MY_DBUS_ALARM (ret);
   else
@@ -2019,7 +2019,7 @@ my_dbus_alarm_proxy_new_for_bus (
     GAsyncReadyCallback  callback,
     gpointer             user_data)
 {
-  g_async_initable_new_async (MY_DBUS_TYPE_ALARM_PROXY, G_PRIORITY_DEFAULT, cancellable, callback, user_data, "g-flags", flags, "g-name", name, "g-bus-type", bus_type, "g-object-path", object_path, "g-interface-name", "com.Nilanjana.Alarm", NULL);
+  g_async_initable_new_async (MY_DBUS_TYPE_ALARM_PROXY, G_PRIORITY_DEFAULT, cancellable, callback, user_data, "g-flags", flags, "g-name", name, "g-bus-type", bus_type, "g-object-path", object_path, "g-interface-name", "com.TestXmlInterface.Alarm", NULL);
 }
 
 /**
@@ -2074,7 +2074,7 @@ my_dbus_alarm_proxy_new_for_bus_sync (
     GError             **error)
 {
   GInitable *ret;
-  ret = g_initable_new (MY_DBUS_TYPE_ALARM_PROXY, cancellable, error, "g-flags", flags, "g-name", name, "g-bus-type", bus_type, "g-object-path", object_path, "g-interface-name", "com.Nilanjana.Alarm", NULL);
+  ret = g_initable_new (MY_DBUS_TYPE_ALARM_PROXY, cancellable, error, "g-flags", flags, "g-name", name, "g-bus-type", bus_type, "g-object-path", object_path, "g-interface-name", "com.TestXmlInterface.Alarm", NULL);
   if (ret != NULL)
     return MY_DBUS_ALARM (ret);
   else
@@ -2276,7 +2276,7 @@ my_dbus_alarm_skeleton_dbus_interface_get_properties (GDBusInterfaceSkeleton *_s
       if (info->flags & G_DBUS_PROPERTY_INFO_FLAGS_READABLE)
         {
           GVariant *value;
-          value = _my_dbus_alarm_skeleton_handle_get_property (g_dbus_interface_skeleton_get_connection (G_DBUS_INTERFACE_SKELETON (skeleton)), NULL, g_dbus_interface_skeleton_get_object_path (G_DBUS_INTERFACE_SKELETON (skeleton)), "com.Nilanjana.Alarm", info->name, NULL, skeleton);
+          value = _my_dbus_alarm_skeleton_handle_get_property (g_dbus_interface_skeleton_get_connection (G_DBUS_INTERFACE_SKELETON (skeleton)), NULL, g_dbus_interface_skeleton_get_object_path (G_DBUS_INTERFACE_SKELETON (skeleton)), "com.TestXmlInterface.Alarm", info->name, NULL, skeleton);
           if (value != NULL)
             {
               g_variant_take_ref (value);
@@ -2325,7 +2325,7 @@ _my_dbus_alarm_on_signal_beep (
     {
       GDBusConnection *connection = l->data;
       g_dbus_connection_emit_signal (connection,
-        NULL, g_dbus_interface_skeleton_get_object_path (G_DBUS_INTERFACE_SKELETON (skeleton)), "com.Nilanjana.Alarm", "beep",
+        NULL, g_dbus_interface_skeleton_get_object_path (G_DBUS_INTERFACE_SKELETON (skeleton)), "com.TestXmlInterface.Alarm", "beep",
         signal_variant, NULL);
     }
   g_variant_unref (signal_variant);
@@ -2403,7 +2403,7 @@ _my_dbus_alarm_emit_changed (gpointer user_data)
     {
       GList *connections, *ll;
       GVariant *signal_variant;
-      signal_variant = g_variant_ref_sink (g_variant_new ("(sa{sv}as)", "com.Nilanjana.Alarm",
+      signal_variant = g_variant_ref_sink (g_variant_new ("(sa{sv}as)", "com.TestXmlInterface.Alarm",
                                            &builder, &invalidated_builder));
       connections = g_dbus_interface_skeleton_get_connections (G_DBUS_INTERFACE_SKELETON (skeleton));
       for (ll = connections; ll != NULL; ll = ll->next)
@@ -2563,7 +2563,7 @@ my_dbus_alarm_skeleton_iface_init (MyDBusAlarmIface *iface)
 /**
  * my_dbus_alarm_skeleton_new:
  *
- * Creates a skeleton object for the D-Bus interface <link linkend="gdbus-interface-com-Nilanjana-Alarm.top_of_page">com.Nilanjana.Alarm</link>.
+ * Creates a skeleton object for the D-Bus interface <link linkend="gdbus-interface-com-Nilanjana-Alarm.top_of_page">com.TestXmlInterface.Alarm</link>.
  *
  * Returns: (transfer full) (type MyDBusAlarmSkeleton): The skeleton object.
  */

@@ -1,5 +1,5 @@
 <node>
-    <interface name="com.Nilanjana.Calculator">
+    <interface name="com.TestXmlInterface.Calculator">
         <method name="add">
             <arg name="num1" direction="in" type="i" />
             <arg name="num2" direction="in" type="i" />
@@ -13,7 +13,7 @@
     </interface>
 
 
-    <interface name="com.Nilanjana.Alarm">
+    <interface name="com.TestXmlInterface.Alarm">
         <method name="configure_alarm">
             <arg name="seconds" type="i" direction="in" />
         </method>

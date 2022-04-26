@@ -15,7 +15,7 @@ G_BEGIN_DECLS
 
 
 /* ------------------------------------------------------------------------ */
-/* Declarations for com.Nilanjana.Calculator */
+/* Declarations for com.TestXmlInterface.Calculator */
 
 #define MY_DBUS_TYPE_CALCULATOR (my_dbus_calculator_get_type ())
 #define MY_DBUS_CALCULATOR(o) (G_TYPE_CHECK_INSTANCE_CAST ((o), MY_DBUS_TYPE_CALCULATOR, MyDBusCalculator))
@@ -215,7 +215,7 @@ MyDBusCalculator *my_dbus_calculator_skeleton_new (void);
 
 
 /* ------------------------------------------------------------------------ */
-/* Declarations for com.Nilanjana.Alarm */
+/* Declarations for com.TestXmlInterface.Alarm */
 
 #define MY_DBUS_TYPE_ALARM (my_dbus_alarm_get_type ())
 #define MY_DBUS_ALARM(o) (G_TYPE_CHECK_INSTANCE_CAST ((o), MY_DBUS_TYPE_ALARM, MyDBusAlarm))
