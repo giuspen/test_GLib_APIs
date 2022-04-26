@@ -1,5 +1,5 @@
 .PHONY: all
-FLAGS=$(shell pkg-config --libs --cflags gio-2.0 gio-unix-2.0 glib-2.0)
+FLAGS = -Wall $(shell pkg-config --libs --cflags gio-2.0 gio-unix-2.0 glib-2.0)
 
 all: server client_add client_sub client_pingme
 

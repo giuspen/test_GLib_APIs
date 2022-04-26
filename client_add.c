@@ -20,7 +20,6 @@ int main(int argc, char **argv)
 
     MyDBusCalculator *proxy;
     GError *error;
-    gint retval;
 
     error = NULL;
     proxy = my_dbus_calculator_proxy_new_for_bus_sync(G_BUS_TYPE_SESSION, 0, "com.Nilanjana", "/", NULL, &error);
