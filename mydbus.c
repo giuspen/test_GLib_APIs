@@ -161,7 +161,7 @@ _g_value_equal (const GValue *a, const GValue *b)
  * @title: MyDBusCalculator
  * @short_description: Generated C code for the com.TestXmlInterface.Calculator D-Bus interface
  *
- * This section contains code for working with the <link linkend="gdbus-interface-com-Nilanjana-Calculator.top_of_page">com.TestXmlInterface.Calculator</link> D-Bus interface in C.
+ * This section contains code for working with the <link linkend="gdbus-interface-com-TestXmlInterface-Calculator.top_of_page">com.TestXmlInterface.Calculator</link> D-Bus interface in C.
  */
 
 /* ---- Introspection data for com.TestXmlInterface.Calculator ---- */
@@ -308,7 +308,7 @@ static const _ExtendedGDBusInterfaceInfo _my_dbus_calculator_interface_info =
 /**
  * my_dbus_calculator_interface_info:
  *
- * Gets a machine-readable description of the <link linkend="gdbus-interface-com-Nilanjana-Calculator.top_of_page">com.TestXmlInterface.Calculator</link> D-Bus interface.
+ * Gets a machine-readable description of the <link linkend="gdbus-interface-com-TestXmlInterface-Calculator.top_of_page">com.TestXmlInterface.Calculator</link> D-Bus interface.
  *
  * Returns: (transfer none): A #GDBusInterfaceInfo. Do not free.
  */
@@ -339,7 +339,7 @@ my_dbus_calculator_override_properties (GObjectClass *klass, guint property_id_b
 /**
  * MyDBusCalculator:
  *
- * Abstract interface type for the D-Bus interface <link linkend="gdbus-interface-com-Nilanjana-Calculator.top_of_page">com.TestXmlInterface.Calculator</link>.
+ * Abstract interface type for the D-Bus interface <link linkend="gdbus-interface-com-TestXmlInterface-Calculator.top_of_page">com.TestXmlInterface.Calculator</link>.
  */
 
 /**
@@ -348,7 +348,7 @@ my_dbus_calculator_override_properties (GObjectClass *klass, guint property_id_b
  * @handle_add: Handler for the #MyDBusCalculator::handle-add signal.
  * @handle_sub: Handler for the #MyDBusCalculator::handle-sub signal.
  *
- * Virtual table for the D-Bus interface <link linkend="gdbus-interface-com-Nilanjana-Calculator.top_of_page">com.TestXmlInterface.Calculator</link>.
+ * Virtual table for the D-Bus interface <link linkend="gdbus-interface-com-TestXmlInterface-Calculator.top_of_page">com.TestXmlInterface.Calculator</link>.
  */
 
 typedef MyDBusCalculatorIface MyDBusCalculatorInterface;
@@ -365,7 +365,7 @@ my_dbus_calculator_default_init (MyDBusCalculatorIface *iface)
    * @arg_num1: Argument passed by remote caller.
    * @arg_num2: Argument passed by remote caller.
    *
-   * Signal emitted when a remote caller is invoking the <link linkend="gdbus-method-com-Nilanjana-Calculator.add">add()</link> D-Bus method.
+   * Signal emitted when a remote caller is invoking the <link linkend="gdbus-method-com-TestXmlInterface-Calculator.add">add()</link> D-Bus method.
    *
    * If a signal handler returns %TRUE, it means the signal handler will handle the invocation (e.g. take a reference to @invocation and eventually call my_dbus_calculator_complete_add() or e.g. g_dbus_method_invocation_return_error() on it) and no order signal handlers will run. If no signal handler handles the invocation, the %G_DBUS_ERROR_UNKNOWN_METHOD error is returned.
    *
@@ -389,7 +389,7 @@ my_dbus_calculator_default_init (MyDBusCalculatorIface *iface)
    * @arg_num1: Argument passed by remote caller.
    * @arg_num2: Argument passed by remote caller.
    *
-   * Signal emitted when a remote caller is invoking the <link linkend="gdbus-method-com-Nilanjana-Calculator.sub">sub()</link> D-Bus method.
+   * Signal emitted when a remote caller is invoking the <link linkend="gdbus-method-com-TestXmlInterface-Calculator.sub">sub()</link> D-Bus method.
    *
    * If a signal handler returns %TRUE, it means the signal handler will handle the invocation (e.g. take a reference to @invocation and eventually call my_dbus_calculator_complete_sub() or e.g. g_dbus_method_invocation_return_error() on it) and no order signal handlers will run. If no signal handler handles the invocation, the %G_DBUS_ERROR_UNKNOWN_METHOD error is returned.
    *
@@ -417,7 +417,7 @@ my_dbus_calculator_default_init (MyDBusCalculatorIface *iface)
  * @callback: A #GAsyncReadyCallback to call when the request is satisfied or %NULL.
  * @user_data: User data to pass to @callback.
  *
- * Asynchronously invokes the <link linkend="gdbus-method-com-Nilanjana-Calculator.add">add()</link> D-Bus method on @proxy.
+ * Asynchronously invokes the <link linkend="gdbus-method-com-TestXmlInterface-Calculator.add">add()</link> D-Bus method on @proxy.
  * When the operation is finished, @callback will be invoked in the thread-default main loop of the thread you are calling this method from (see g_main_context_push_thread_default()).
  * You can then call my_dbus_calculator_call_add_finish() to get the result of the operation.
  *
@@ -483,7 +483,7 @@ _out:
  * @cancellable: (nullable): A #GCancellable or %NULL.
  * @error: Return location for error or %NULL.
  *
- * Synchronously invokes the <link linkend="gdbus-method-com-Nilanjana-Calculator.add">add()</link> D-Bus method on @proxy. The calling thread is blocked until a reply is received.
+ * Synchronously invokes the <link linkend="gdbus-method-com-TestXmlInterface-Calculator.add">add()</link> D-Bus method on @proxy. The calling thread is blocked until a reply is received.
  *
  * See my_dbus_calculator_call_add() for the asynchronous version of this method.
  *
@@ -527,7 +527,7 @@ _out:
  * @callback: A #GAsyncReadyCallback to call when the request is satisfied or %NULL.
  * @user_data: User data to pass to @callback.
  *
- * Asynchronously invokes the <link linkend="gdbus-method-com-Nilanjana-Calculator.sub">sub()</link> D-Bus method on @proxy.
+ * Asynchronously invokes the <link linkend="gdbus-method-com-TestXmlInterface-Calculator.sub">sub()</link> D-Bus method on @proxy.
  * When the operation is finished, @callback will be invoked in the thread-default main loop of the thread you are calling this method from (see g_main_context_push_thread_default()).
  * You can then call my_dbus_calculator_call_sub_finish() to get the result of the operation.
  *
@@ -593,7 +593,7 @@ _out:
  * @cancellable: (nullable): A #GCancellable or %NULL.
  * @error: Return location for error or %NULL.
  *
- * Synchronously invokes the <link linkend="gdbus-method-com-Nilanjana-Calculator.sub">sub()</link> D-Bus method on @proxy. The calling thread is blocked until a reply is received.
+ * Synchronously invokes the <link linkend="gdbus-method-com-TestXmlInterface-Calculator.sub">sub()</link> D-Bus method on @proxy. The calling thread is blocked until a reply is received.
  *
  * See my_dbus_calculator_call_sub() for the asynchronous version of this method.
  *
@@ -634,7 +634,7 @@ _out:
  * @invocation: (transfer full): A #GDBusMethodInvocation.
  * @ans: Parameter to return.
  *
- * Helper function used in service implementations to finish handling invocations of the <link linkend="gdbus-method-com-Nilanjana-Calculator.add">add()</link> D-Bus method. If you instead want to finish handling an invocation by returning an error, use g_dbus_method_invocation_return_error() or similar.
+ * Helper function used in service implementations to finish handling invocations of the <link linkend="gdbus-method-com-TestXmlInterface-Calculator.add">add()</link> D-Bus method. If you instead want to finish handling an invocation by returning an error, use g_dbus_method_invocation_return_error() or similar.
  *
  * This method will free @invocation, you cannot use it afterwards.
  */
@@ -655,7 +655,7 @@ my_dbus_calculator_complete_add (
  * @invocation: (transfer full): A #GDBusMethodInvocation.
  * @ans: Parameter to return.
  *
- * Helper function used in service implementations to finish handling invocations of the <link linkend="gdbus-method-com-Nilanjana-Calculator.sub">sub()</link> D-Bus method. If you instead want to finish handling an invocation by returning an error, use g_dbus_method_invocation_return_error() or similar.
+ * Helper function used in service implementations to finish handling invocations of the <link linkend="gdbus-method-com-TestXmlInterface-Calculator.sub">sub()</link> D-Bus method. If you instead want to finish handling an invocation by returning an error, use g_dbus_method_invocation_return_error() or similar.
  *
  * This method will free @invocation, you cannot use it afterwards.
  */
@@ -843,7 +843,7 @@ my_dbus_calculator_proxy_iface_init (MyDBusCalculatorIface *iface)
  * @callback: A #GAsyncReadyCallback to call when the request is satisfied.
  * @user_data: User data to pass to @callback.
  *
- * Asynchronously creates a proxy for the D-Bus interface <link linkend="gdbus-interface-com-Nilanjana-Calculator.top_of_page">com.TestXmlInterface.Calculator</link>. See g_dbus_proxy_new() for more details.
+ * Asynchronously creates a proxy for the D-Bus interface <link linkend="gdbus-interface-com-TestXmlInterface-Calculator.top_of_page">com.TestXmlInterface.Calculator</link>. See g_dbus_proxy_new() for more details.
  *
  * When the operation is finished, @callback will be invoked in the thread-default main loop of the thread you are calling this method from (see g_main_context_push_thread_default()).
  * You can then call my_dbus_calculator_proxy_new_finish() to get the result of the operation.
@@ -897,7 +897,7 @@ my_dbus_calculator_proxy_new_finish (
  * @cancellable: (nullable): A #GCancellable or %NULL.
  * @error: Return location for error or %NULL
  *
- * Synchronously creates a proxy for the D-Bus interface <link linkend="gdbus-interface-com-Nilanjana-Calculator.top_of_page">com.TestXmlInterface.Calculator</link>. See g_dbus_proxy_new_sync() for more details.
+ * Synchronously creates a proxy for the D-Bus interface <link linkend="gdbus-interface-com-TestXmlInterface-Calculator.top_of_page">com.TestXmlInterface.Calculator</link>. See g_dbus_proxy_new_sync() for more details.
  *
  * The calling thread is blocked until a reply is received.
  *
@@ -1289,7 +1289,7 @@ my_dbus_calculator_skeleton_iface_init (MyDBusCalculatorIface *iface)
 /**
  * my_dbus_calculator_skeleton_new:
  *
- * Creates a skeleton object for the D-Bus interface <link linkend="gdbus-interface-com-Nilanjana-Calculator.top_of_page">com.TestXmlInterface.Calculator</link>.
+ * Creates a skeleton object for the D-Bus interface <link linkend="gdbus-interface-com-TestXmlInterface-Calculator.top_of_page">com.TestXmlInterface.Calculator</link>.
  *
  * Returns: (transfer full) (type MyDBusCalculatorSkeleton): The skeleton object.
  */
@@ -1309,7 +1309,7 @@ my_dbus_calculator_skeleton_new (void)
  * @title: MyDBusAlarm
  * @short_description: Generated C code for the com.TestXmlInterface.Alarm D-Bus interface
  *
- * This section contains code for working with the <link linkend="gdbus-interface-com-Nilanjana-Alarm.top_of_page">com.TestXmlInterface.Alarm</link> D-Bus interface in C.
+ * This section contains code for working with the <link linkend="gdbus-interface-com-TestXmlInterface-Alarm.top_of_page">com.TestXmlInterface.Alarm</link> D-Bus interface in C.
  */
 
 /* ---- Introspection data for com.TestXmlInterface.Alarm ---- */
@@ -1404,7 +1404,7 @@ static const _ExtendedGDBusInterfaceInfo _my_dbus_alarm_interface_info =
 /**
  * my_dbus_alarm_interface_info:
  *
- * Gets a machine-readable description of the <link linkend="gdbus-interface-com-Nilanjana-Alarm.top_of_page">com.TestXmlInterface.Alarm</link> D-Bus interface.
+ * Gets a machine-readable description of the <link linkend="gdbus-interface-com-TestXmlInterface-Alarm.top_of_page">com.TestXmlInterface.Alarm</link> D-Bus interface.
  *
  * Returns: (transfer none): A #GDBusInterfaceInfo. Do not free.
  */
@@ -1436,7 +1436,7 @@ my_dbus_alarm_override_properties (GObjectClass *klass, guint property_id_begin)
 /**
  * MyDBusAlarm:
  *
- * Abstract interface type for the D-Bus interface <link linkend="gdbus-interface-com-Nilanjana-Alarm.top_of_page">com.TestXmlInterface.Alarm</link>.
+ * Abstract interface type for the D-Bus interface <link linkend="gdbus-interface-com-TestXmlInterface-Alarm.top_of_page">com.TestXmlInterface.Alarm</link>.
  */
 
 /**
@@ -1446,7 +1446,7 @@ my_dbus_alarm_override_properties (GObjectClass *klass, guint property_id_begin)
  * @get_activated: Getter for the #MyDBusAlarm:activated property.
  * @beep: Handler for the #MyDBusAlarm::beep signal.
  *
- * Virtual table for the D-Bus interface <link linkend="gdbus-interface-com-Nilanjana-Alarm.top_of_page">com.TestXmlInterface.Alarm</link>.
+ * Virtual table for the D-Bus interface <link linkend="gdbus-interface-com-TestXmlInterface-Alarm.top_of_page">com.TestXmlInterface.Alarm</link>.
  */
 
 typedef MyDBusAlarmIface MyDBusAlarmInterface;
@@ -1462,7 +1462,7 @@ my_dbus_alarm_default_init (MyDBusAlarmIface *iface)
    * @invocation: A #GDBusMethodInvocation.
    * @arg_seconds: Argument passed by remote caller.
    *
-   * Signal emitted when a remote caller is invoking the <link linkend="gdbus-method-com-Nilanjana-Alarm.configure_alarm">configure_alarm()</link> D-Bus method.
+   * Signal emitted when a remote caller is invoking the <link linkend="gdbus-method-com-TestXmlInterface-Alarm.configure_alarm">configure_alarm()</link> D-Bus method.
    *
    * If a signal handler returns %TRUE, it means the signal handler will handle the invocation (e.g. take a reference to @invocation and eventually call my_dbus_alarm_complete_configure_alarm() or e.g. g_dbus_method_invocation_return_error() on it) and no order signal handlers will run. If no signal handler handles the invocation, the %G_DBUS_ERROR_UNKNOWN_METHOD error is returned.
    *
@@ -1484,7 +1484,7 @@ my_dbus_alarm_default_init (MyDBusAlarmIface *iface)
    * MyDBusAlarm::beep:
    * @object: A #MyDBusAlarm.
    *
-   * On the client-side, this signal is emitted whenever the D-Bus signal <link linkend="gdbus-signal-com-Nilanjana-Alarm.beep">"beep"</link> is received.
+   * On the client-side, this signal is emitted whenever the D-Bus signal <link linkend="gdbus-signal-com-TestXmlInterface-Alarm.beep">"beep"</link> is received.
    *
    * On the service-side, this signal can be used with e.g. g_signal_emit_by_name() to make the object emit the D-Bus signal.
    */
@@ -1502,7 +1502,7 @@ my_dbus_alarm_default_init (MyDBusAlarmIface *iface)
   /**
    * MyDBusAlarm:activated:
    *
-   * Represents the D-Bus property <link linkend="gdbus-property-com-Nilanjana-Alarm.activated">"activated"</link>.
+   * Represents the D-Bus property <link linkend="gdbus-property-com-TestXmlInterface-Alarm.activated">"activated"</link>.
    *
    * Since the D-Bus property for this #GObject property is readable but not writable, it is meaningful to read from it on both the client- and service-side. It is only meaningful, however, to write to it on the service-side.
    */
@@ -1514,7 +1514,7 @@ my_dbus_alarm_default_init (MyDBusAlarmIface *iface)
  * my_dbus_alarm_get_activated: (skip)
  * @object: A #MyDBusAlarm.
  *
- * Gets the value of the <link linkend="gdbus-property-com-Nilanjana-Alarm.activated">"activated"</link> D-Bus property.
+ * Gets the value of the <link linkend="gdbus-property-com-TestXmlInterface-Alarm.activated">"activated"</link> D-Bus property.
  *
  * Since this D-Bus property is readable, it is meaningful to use this function on both the client- and service-side.
  *
@@ -1531,7 +1531,7 @@ my_dbus_alarm_get_activated (MyDBusAlarm *object)
  * @object: A #MyDBusAlarm.
  * @value: The value to set.
  *
- * Sets the <link linkend="gdbus-property-com-Nilanjana-Alarm.activated">"activated"</link> D-Bus property to @value.
+ * Sets the <link linkend="gdbus-property-com-TestXmlInterface-Alarm.activated">"activated"</link> D-Bus property to @value.
  *
  * Since this D-Bus property is not writable, it is only meaningful to use this function on the service-side.
  */
@@ -1545,7 +1545,7 @@ my_dbus_alarm_set_activated (MyDBusAlarm *object, gboolean value)
  * my_dbus_alarm_emit_beep:
  * @object: A #MyDBusAlarm.
  *
- * Emits the <link linkend="gdbus-signal-com-Nilanjana-Alarm.beep">"beep"</link> D-Bus signal.
+ * Emits the <link linkend="gdbus-signal-com-TestXmlInterface-Alarm.beep">"beep"</link> D-Bus signal.
  */
 void
 my_dbus_alarm_emit_beep (
@@ -1562,7 +1562,7 @@ my_dbus_alarm_emit_beep (
  * @callback: A #GAsyncReadyCallback to call when the request is satisfied or %NULL.
  * @user_data: User data to pass to @callback.
  *
- * Asynchronously invokes the <link linkend="gdbus-method-com-Nilanjana-Alarm.configure_alarm">configure_alarm()</link> D-Bus method on @proxy.
+ * Asynchronously invokes the <link linkend="gdbus-method-com-TestXmlInterface-Alarm.configure_alarm">configure_alarm()</link> D-Bus method on @proxy.
  * When the operation is finished, @callback will be invoked in the thread-default main loop of the thread you are calling this method from (see g_main_context_push_thread_default()).
  * You can then call my_dbus_alarm_call_configure_alarm_finish() to get the result of the operation.
  *
@@ -1621,7 +1621,7 @@ _out:
  * @cancellable: (nullable): A #GCancellable or %NULL.
  * @error: Return location for error or %NULL.
  *
- * Synchronously invokes the <link linkend="gdbus-method-com-Nilanjana-Alarm.configure_alarm">configure_alarm()</link> D-Bus method on @proxy. The calling thread is blocked until a reply is received.
+ * Synchronously invokes the <link linkend="gdbus-method-com-TestXmlInterface-Alarm.configure_alarm">configure_alarm()</link> D-Bus method on @proxy. The calling thread is blocked until a reply is received.
  *
  * See my_dbus_alarm_call_configure_alarm() for the asynchronous version of this method.
  *
@@ -1657,7 +1657,7 @@ _out:
  * @object: A #MyDBusAlarm.
  * @invocation: (transfer full): A #GDBusMethodInvocation.
  *
- * Helper function used in service implementations to finish handling invocations of the <link linkend="gdbus-method-com-Nilanjana-Alarm.configure_alarm">configure_alarm()</link> D-Bus method. If you instead want to finish handling an invocation by returning an error, use g_dbus_method_invocation_return_error() or similar.
+ * Helper function used in service implementations to finish handling invocations of the <link linkend="gdbus-method-com-TestXmlInterface-Alarm.configure_alarm">configure_alarm()</link> D-Bus method. If you instead want to finish handling an invocation by returning an error, use g_dbus_method_invocation_return_error() or similar.
  *
  * This method will free @invocation, you cannot use it afterwards.
  */
@@ -1912,7 +1912,7 @@ my_dbus_alarm_proxy_iface_init (MyDBusAlarmIface *iface)
  * @callback: A #GAsyncReadyCallback to call when the request is satisfied.
  * @user_data: User data to pass to @callback.
  *
- * Asynchronously creates a proxy for the D-Bus interface <link linkend="gdbus-interface-com-Nilanjana-Alarm.top_of_page">com.TestXmlInterface.Alarm</link>. See g_dbus_proxy_new() for more details.
+ * Asynchronously creates a proxy for the D-Bus interface <link linkend="gdbus-interface-com-TestXmlInterface-Alarm.top_of_page">com.TestXmlInterface.Alarm</link>. See g_dbus_proxy_new() for more details.
  *
  * When the operation is finished, @callback will be invoked in the thread-default main loop of the thread you are calling this method from (see g_main_context_push_thread_default()).
  * You can then call my_dbus_alarm_proxy_new_finish() to get the result of the operation.
@@ -1966,7 +1966,7 @@ my_dbus_alarm_proxy_new_finish (
  * @cancellable: (nullable): A #GCancellable or %NULL.
  * @error: Return location for error or %NULL
  *
- * Synchronously creates a proxy for the D-Bus interface <link linkend="gdbus-interface-com-Nilanjana-Alarm.top_of_page">com.TestXmlInterface.Alarm</link>. See g_dbus_proxy_new_sync() for more details.
+ * Synchronously creates a proxy for the D-Bus interface <link linkend="gdbus-interface-com-TestXmlInterface-Alarm.top_of_page">com.TestXmlInterface.Alarm</link>. See g_dbus_proxy_new_sync() for more details.
  *
  * The calling thread is blocked until a reply is received.
  *
@@ -2563,7 +2563,7 @@ my_dbus_alarm_skeleton_iface_init (MyDBusAlarmIface *iface)
 /**
  * my_dbus_alarm_skeleton_new:
  *
- * Creates a skeleton object for the D-Bus interface <link linkend="gdbus-interface-com-Nilanjana-Alarm.top_of_page">com.TestXmlInterface.Alarm</link>.
+ * Creates a skeleton object for the D-Bus interface <link linkend="gdbus-interface-com-TestXmlInterface-Alarm.top_of_page">com.TestXmlInterface.Alarm</link>.
  *
  * Returns: (transfer full) (type MyDBusAlarmSkeleton): The skeleton object.
  */

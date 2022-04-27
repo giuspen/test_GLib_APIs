@@ -31,7 +31,7 @@ int main()
     GMainLoop *loop;
     loop = g_main_loop_new(NULL, FALSE);
 
-    g_bus_own_name(G_BUS_TYPE_SESSION, "com.Nilanjana", 0, NULL, on_name_acquired, NULL, NULL, NULL);
+    g_bus_own_name(G_BUS_TYPE_SESSION, "com.TestXmlInterface", 0, NULL, on_name_acquired, NULL, NULL, NULL);
 
     g_main_loop_run(loop);
 }

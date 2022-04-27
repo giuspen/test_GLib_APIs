@@ -24,7 +24,7 @@ int main(int argc, char **argv)
     GError *error;
     error = NULL;
     proxy = NULL;
-    proxy = my_dbus_alarm_proxy_new_for_bus_sync(G_BUS_TYPE_SESSION, 0, "com.Nilanjana", "/", NULL, &error);
+    proxy = my_dbus_alarm_proxy_new_for_bus_sync(G_BUS_TYPE_SESSION, 0, "com.TestXmlInterface", "/", NULL, &error);
 
     g_signal_connect(proxy, "beep", G_CALLBACK(beep_cb) , NULL);
 
